@@ -1,0 +1,35 @@
+1. Создание проекта 
+ django-admin startproject FirstProject
+
+2. Открыть проект
+ cd FirstProject
+
+3. Настроить виртуальное окружение
+ virtualenv venv 
+
+4. Активируем виртуальное окружение
+ source venv/bin/activate 
+
+5. Установить зависимости
+ pip install django
+
+6. Миграции 
+ python3 manage.py makemigrations 
+ python3 manage.py migrate 
+
+7. Создать суперпользователя
+ python3 manage.py createsuperuser
+
+
+8. Создание Приложения 
+ python3 manage.py startapp <app_name>
+
+9. В INSTALLED_APPS зарегистрируем приложение
+
+  INSTALLED_APPS = [
+    ...
+    <app_name>,
+    ]
+
+10. Запустить сервер
+ python3 manage.py runserver
